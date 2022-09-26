@@ -3,3 +3,4 @@ adios Alberto
 Jose
 nos vamos de gatitas este finde
 ejercicio para mañana
+clonar el repositorio ysubir los cambios
