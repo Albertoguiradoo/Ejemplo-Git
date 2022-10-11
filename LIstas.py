@@ -6,7 +6,7 @@ vNOMBRES = []
 vNOMBRES.insert(0,"Juan")
 vNOMBRES.insert(1,"Pepe")
 vNOMBRES.insert(2,"Inés")
-vNOMBRES.append("Minerva")
+vNOMBRES.insert("Minerva")
 vNOMBRES.insert(1,"Rufino")
 
 ##Eliminar un elemento
