@@ -9,7 +9,7 @@ print(edad/5)
 print(len("Juan"))
 
 edad2 = int(input("Dime tu edad:"))
-
+'''
 #---Funciones definidas por el usuario
 
 def imprimirHola(nombre:str, apellido:str):
@@ -24,7 +24,7 @@ def imprimirSuma(num1:int, num2:int):
 
 suma=imprimirSuma(2,3)
 print("La suma es de: ", suma)
-'''
+
 
 from pytube import YouTube
 def  descargaaCAncion(url:str):

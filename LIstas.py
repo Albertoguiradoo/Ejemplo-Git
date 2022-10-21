@@ -1,4 +1,4 @@
-#Listas en opython
+#Listas en python
 #Definición e inicialización
 vNOMBRES = []
 
