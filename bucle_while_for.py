@@ -12,6 +12,7 @@ while (bandera == True):
         bandera = False
 '''
 #juego
+'''
 contraSECRETA= "alberto"
 contra = input("Dime la contraseña :\n")
 while(contra != contraSECRETA):
@@ -19,3 +20,9 @@ while(contra != contraSECRETA):
     contra = input("Dime la contraseña :\n")
 
 print("Felicidades has ganado")
+'''
+#bucle for
+#lista=[1,2,3,4,5,6,7,8,9,10]
+vNombres = ["Ángel, Alberto , Elena"]
+for num in vNombres:
+    print(num)
