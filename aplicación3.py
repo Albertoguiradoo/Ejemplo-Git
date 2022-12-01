@@ -72,7 +72,7 @@ botón_salir.grid(row=5, column=1, pady= 6)
 label_género.grid(row=4, column=0, pady= 5)
 
 #Combobox   
-combo_género = ttk.Combobox(ventana, values=["Mujer", "Hombre", "Género no binario", "No espeficicar"])
+combo_género = ttk.Combobox(ventana,state="readonly", values=["Mujer", "Hombre", "Género no binario", "No espeficicar"])
 combo_género .grid(row=4, column=1, pady= 5)
 combo_género.set("Espeficique su género")
 
