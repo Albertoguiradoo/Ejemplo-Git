@@ -4,12 +4,8 @@ import flet as ft
 def main(page: ft.Page):
     page.title="Bienvenido a su frutería de confianza!"
     botón_Añadir=ft.FilledButton("Añadir", icon="Añadir")
-    def botón_Añadir():
-        botón_Añadir.append= dropDownMenúCarnes
-        botón_Añadir.append= dropDownMenúVerduras
-        botón_Añadir.append= dropDownMenúPescados
-        botón_Añadir.append= dropDownMenúSales
-
+    #def botón_Añadir():
+ 
 
     
 
