@@ -3,10 +3,22 @@ import flet as ft
 
 def main(page: ft.Page):
     page.title="Bienvenido a su frutería de confianza!"
-    botón_Añadir=ft.FilledButton("Añadir", icon="Añadir")
-    #def botón_Añadir():
+   
+    
  
-
+    
+    
+    vbotón=[]
+    def añadir_producto(e):
+        vbotón.append(botón_Añadir_Verduras)
+        print(vbotón)
+        
+    botón_Añadir_Verduras=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
+    botón_Añadir_Carnes=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
+    botón_Añadir_Pescados=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
+    botón_Añadir_Sales=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
+    botón_Añadir_Cervezas=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
+    botón_Añadir_Botellas=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
     
 
 
@@ -24,7 +36,7 @@ def main(page: ft.Page):
                                                     ft.dropdown.Option("moras 50$/kg"),
                                                     ft.dropdown.Option("pepinillos 1,2$/kg"),
                                                     ft.dropdown.Option("tomate para el mejor gazpacho 2$/kg")])
-    fila1 = ft.Row(spacing=0, controls=[dropDownMenúVerduras,botón_Añadir] )                                             
+    fila1 = ft.Row(spacing=50, controls=[dropDownMenúVerduras,botón_Añadir_Verduras] )                                             
     page.add(fila1)
     
 
@@ -36,7 +48,7 @@ def main(page: ft.Page):
                                                     ft.dropdown.Option("Gambones  100$/kg"),
                                                     ft.dropdown.Option("Aleta de Tiburón 5000$/kg"),
                                                     ft.dropdown.Option("Atún Rojo 100.000.$/kg")])
-    fila2 = ft.Row(spacing=0, controls=[dropDownMenúPescados,botón_Añadir] )                                             
+    fila2 = ft.Row(spacing=0, controls=[dropDownMenúPescados,botón_Añadir_Pescados] )                                             
     page.add(fila2)
     
 
@@ -49,7 +61,7 @@ def main(page: ft.Page):
                                                     ft.dropdown.Option("Carne de Angus 100$/kg"),
                                                     ft.dropdown.Option("Carne de Ozaki 50.000$/kg"),
                                                     ft.dropdown.Option("Carne de Kobe 1000.000$/kg")])
-    fila3 = ft.Row(spacing=0, controls=[dropDownMenúCarnes,botón_Añadir] )                                             
+    fila3 = ft.Row(spacing=0, controls=[dropDownMenúCarnes,botón_Añadir_Carnes] )                                             
     page.add(fila3)
     
 
@@ -62,7 +74,7 @@ def main(page: ft.Page):
                                                     ft.dropdown.Option("Sal del Himalaya o sal rosa 10$/kg"),
                                                     ft.dropdown.Option("Sal negra de Hawái 20$/kg"),
                                                     ft.dropdown.Option("Sal ahumada 30$/kg")])
-    fila4 = ft.Row(spacing=0, controls=[dropDownMenúSales,botón_Añadir] )                                             
+    fila4 = ft.Row(spacing=0, controls=[dropDownMenúSales,botón_Añadir_Sales] )                                             
     page.add(fila4)
 
     texto_Título_Sección_Cervezas=ft.Text(value="sección de Cervezas", color="black", size=20)
@@ -73,10 +85,18 @@ def main(page: ft.Page):
                                                     ft.dropdown.Option("Alhambra 10$/unidad"),
                                                     ft.dropdown.Option("Salto Stout 20$/unidad"),
                                                     ft.dropdown.Option("Heineken 30$/unidad")])
-    fila5 = ft.Row(spacing=0, controls=[dropDownMenúCervezas,botón_Añadir] )                                             
+    fila5 = ft.Row(spacing=0, controls=[dropDownMenúCervezas,botón_Añadir_Cervezas] )                                             
     page.add(fila5)
+    
+    texto_Título_Sección_Botellas=ft.Text(value="sección de Botellas", color="black", size=20)
+    page.add(texto_Título_Sección_Botellas)
+    dropDownMenúBotellas = ft.Dropdown(width=400, options=[ft.dropdown.Option("Barcelo 12$/unidad"),
+                                                    ft.dropdown.Option("Bombay 20$/unidad"),
+                                                    ft.dropdown.Option("Beefeter 150$/unidad"),
+                                                    ft.dropdown.Option("champagne Francés 80$/unidad"),
+                                                    ft.dropdown.Option("Jageer 20$/unidad"),
+                                                    ft.dropdown.Option("Tequila 30$/unidad")])
+    fila6 = ft.Row(spacing=0, controls=[dropDownMenúBotellas,botón_Añadir_Botellas] )                                             
+    page.add(fila6)
         
-   
-
-
-ft.app(target=main)
+   return
