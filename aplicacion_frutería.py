@@ -8,10 +8,14 @@ def main(page: ft.Page):
  
     
     
-    vbotón=[]
+    vCompra=[]
     def añadir_producto(e):
-        vbotón.append(botón_Añadir_Verduras)
-        print(vbotón)
+        if dropDownMenúVerduras.value!=None:
+            vCompra.append(dropDownMenúVerduras.value)
+            dropDownMenúVerdura
+            print(vCompra)
+        else:
+            print("No ha seleccionado nada.")
         
     botón_Añadir_Verduras=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
     botón_Añadir_Carnes=ft.FilledButton(text="Añadir", icon="Añadir", on_click=añadir_producto)
@@ -99,4 +103,7 @@ def main(page: ft.Page):
     fila6 = ft.Row(spacing=0, controls=[dropDownMenúBotellas,botón_Añadir_Botellas] )                                             
     page.add(fila6)
         
-   return
+
+
+
+ft.app(target=main)
