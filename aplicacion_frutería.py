@@ -8,24 +8,45 @@ def main(page: ft.Page):
     caja_número_3= ft.TextField(value="0", text_align=ft.TextAlign.RIGHT, width=100)
     caja_número_4= ft.TextField(value="0", text_align=ft.TextAlign.RIGHT, width=100)
     caja_número_5= ft.TextField(value="0", text_align=ft.TextAlign.RIGHT, width=100)
-    def minus_click(e):
-        caja_número_1.value = str(int(caja_número_1.value) - 1)
-        caja_número_2.value = str(int(caja_número_2.value) - 1)
-        caja_número_3.value = str(int(caja_número_3.value) - 1)
-        caja_número_4.value = str(int(caja_número_4.value) - 1)
-        caja_número_5.value = str(int(caja_número_5.value) - 1)
-        
+    def menus_click_1(e):
+        caja_número_1.value = str(int(caja_número_1.value) - 1)       
         page.update()
 
-    def plus_click(e):
+    def plus_click_1(e):
         caja_número_1.value = str(int(caja_número_1.value) + 1)
-        caja_número_2.value = str(int(caja_número_2.value) + 1)
-        caja_número_3.value = str(int(caja_número_3.value) + 1)
-        caja_número_4.value = str(int(caja_número_1.value) + 1)
-        caja_número_5.value = str(int(caja_número_5.value) + 1)
-        
+        page.update()
+   
+    def menus_click_2(e):
+        caja_número_2.value = str(int(caja_número_2.value) - 1)       
         page.update()
 
+    def plus_click_2(e):
+        caja_número_2.value = str(int(caja_número_2.value) + 1)
+        page.update()
+   
+    def menus_click_3(e):
+        caja_número_3.value = str(int(caja_número_3.value) - 1)       
+        page.update()
+
+    def plus_click_3(e):
+        caja_número_3.value = str(int(caja_número_3.value) + 1)
+        page.update()
+   
+    def menus_click_4(e):
+        caja_número_4.value = str(int(caja_número_4.value) - 1)       
+        page.update()
+
+    def plus_click_4(e):
+        caja_número_4.value = str(int(caja_número_4.value) + 1)
+        page.update()
+    
+    def menus_click_5(e):
+        caja_número_5.value = str(int(caja_número_5.value) - 1)       
+        page.update()
+
+    def plus_click_5(e):
+        caja_número_5.value = str(int(caja_número_5.value) + 1)
+        page.update()
     def finalizar_Compra():
         print(vCompra)
 
@@ -71,8 +92,8 @@ def main(page: ft.Page):
     page.add(fila1)
     page.add(
         ft.Row(
-            [ft.IconButton(ft.icons.REMOVE, on_click=minus_click),caja_número_1,
-            ft.IconButton(ft.icons.ADD, on_click=plus_click)],
+            [ft.IconButton(ft.icons.REMOVE, on_click=menus_click_1),caja_número_1,
+            ft.IconButton(ft.icons.ADD, on_click=plus_click_1)],
             alignment=ft.MainAxisAlignment.CENTER))
     
     
@@ -88,8 +109,8 @@ def main(page: ft.Page):
     page.add(fila2)
     page.add(
         ft.Row(
-            [ft.IconButton(ft.icons.REMOVE, on_click=minus_click),caja_número_2,
-            ft.IconButton(ft.icons.ADD, on_click=plus_click)],
+            [ft.IconButton(ft.icons.REMOVE, on_click=menus_click_2),caja_número_2,
+            ft.IconButton(ft.icons.ADD, on_click=plus_click_2)],
             alignment=ft.MainAxisAlignment.CENTER))
     
 
@@ -109,8 +130,8 @@ def main(page: ft.Page):
     page.add(fila3)
     page.add(
         ft.Row(
-            [ft.IconButton(ft.icons.REMOVE, on_click=minus_click),caja_número_3,
-            ft.IconButton(ft.icons.ADD, on_click=plus_click)],
+            [ft.IconButton(ft.icons.REMOVE, on_click=menus_click_3),caja_número_3,
+            ft.IconButton(ft.icons.ADD, on_click=plus_click_3)],
             alignment=ft.MainAxisAlignment.CENTER))
     
  
@@ -128,8 +149,8 @@ def main(page: ft.Page):
     page.add(fila4)
     page.add(
         ft.Row(
-            [ft.IconButton(ft.icons.REMOVE, on_click=minus_click),caja_número_4,
-            ft.IconButton(ft.icons.ADD, on_click=plus_click)],
+            [ft.IconButton(ft.icons.REMOVE, on_click=menus_click_4),caja_número_4,
+            ft.IconButton(ft.icons.ADD, on_click=plus_click_4)],
             alignment=ft.MainAxisAlignment.CENTER))
     
    
@@ -147,8 +168,8 @@ def main(page: ft.Page):
     page.add(fila5)
     page.add(
         ft.Row(
-            [ft.IconButton(ft.icons.REMOVE, on_click=minus_click),caja_número_5,
-            ft.IconButton(ft.icons.ADD, on_click=plus_click)],
+            [ft.IconButton(ft.icons.REMOVE, on_click=menus_click_5),caja_número_5,
+            ft.IconButton(ft.icons.ADD, on_click=plus_click_5)],
             alignment=ft.MainAxisAlignment.CENTER))
 
 
